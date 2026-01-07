@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
+import Login from "./pages/Login";
 import SharedLayout from "./components/SharedLayout";
 import Dashboard from "./pages/Dashboard";
 import PatientFile from "./pages/PatientFile";
@@ -16,6 +17,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/login" element={<Login />} />
         <Route
           path="/dashboard"
           element={
