@@ -50,14 +50,17 @@ export default function SharedLayout({ children }: SharedLayoutProps) {
         {/* Logo Section */}
         <div className="p-6 border-b border-sidebar-border">
           <div className="flex items-center justify-between">
-            <div className={`flex items-center gap-3 ${!sidebarOpen && "flex-col"}`}>
+            <Link
+              to="/"
+              className={`flex items-center gap-3 hover:opacity-80 transition-opacity ${!sidebarOpen && "flex-col"}`}
+            >
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
                 <Building2 className="w-6 h-6 text-white" />
               </div>
               {sidebarOpen && (
                 <h1 className="text-sm font-bold text-sidebar-foreground">HMS</h1>
               )}
-            </div>
+            </Link>
             <button
               onClick={() => setSidebarOpen(!sidebarOpen)}
               className="p-1 hover:bg-sidebar-accent rounded-lg transition-colors"
