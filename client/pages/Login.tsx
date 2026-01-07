@@ -60,14 +60,20 @@ export default function Login() {
       {/* Navigation Bar */}
       <header className="absolute top-0 left-0 right-0 z-10 bg-white/50 backdrop-blur-sm border-b border-border/50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+          <Link
+            to="/"
+            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+          >
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
               <Building2 className="w-6 h-6 text-white" />
             </div>
             <h1 className="text-xl font-bold text-foreground">HMS</h1>
           </Link>
           <Link to="/">
-            <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
+            <Button
+              variant="ghost"
+              className="text-muted-foreground hover:text-foreground"
+            >
               Back to Home
             </Button>
           </Link>
@@ -102,13 +108,18 @@ export default function Login() {
               {/* Error Message */}
               {error && (
                 <div className="p-4 rounded-lg bg-destructive/10 border border-destructive/20">
-                  <p className="text-sm text-destructive font-medium">{error}</p>
+                  <p className="text-sm text-destructive font-medium">
+                    {error}
+                  </p>
                 </div>
               )}
 
               {/* Email Field */}
               <div className="space-y-2">
-                <Label htmlFor="email" className="text-sm font-medium text-foreground">
+                <Label
+                  htmlFor="email"
+                  className="text-sm font-medium text-foreground"
+                >
                   Email Address
                 </Label>
                 <div className="relative">
@@ -127,7 +138,10 @@ export default function Login() {
 
               {/* Password Field */}
               <div className="space-y-2">
-                <Label htmlFor="password" className="text-sm font-medium text-foreground">
+                <Label
+                  htmlFor="password"
+                  className="text-sm font-medium text-foreground"
+                >
                   Password
                 </Label>
                 <div className="relative">
@@ -201,7 +215,9 @@ export default function Login() {
                   <div className="w-full border-t border-border"></div>
                 </div>
                 <div className="relative flex justify-center text-sm">
-                  <span className="px-2 bg-white text-muted-foreground">Or continue as</span>
+                  <span className="px-2 bg-white text-muted-foreground">
+                    Or continue as
+                  </span>
                 </div>
               </div>
 
