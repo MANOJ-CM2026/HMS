@@ -22,7 +22,7 @@ interface SharedLayoutProps {
 }
 
 const navigationItems = [
-  { path: "/", label: "Dashboard", icon: LayoutDashboard },
+  { path: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { path: "/patient-file", label: "Patient File", icon: Users },
   { path: "/hospital-master", label: "Hospital Master", icon: Building2 },
   { path: "/lab-master", label: "Lab Master", icon: Beaker },
