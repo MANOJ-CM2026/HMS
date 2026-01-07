@@ -254,7 +254,7 @@ export default function Landing() {
             Join hundreds of healthcare facilities using our system to improve patient care and operational efficiency
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/dashboard">
+            <Link to="/login">
               <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg gap-2">
                 Start Using HMS
                 <ArrowRight className="w-5 h-5" />
