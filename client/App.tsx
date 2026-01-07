@@ -6,6 +6,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Landing from "./pages/Landing";
 import SharedLayout from "./components/SharedLayout";
 import Dashboard from "./pages/Dashboard";
 import PatientFile from "./pages/PatientFile";
@@ -26,8 +27,9 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Landing />} />
           <Route
-            path="/"
+            path="/dashboard"
             element={
               <SharedLayout>
                 <Dashboard />
