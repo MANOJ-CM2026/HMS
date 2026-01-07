@@ -29,7 +29,7 @@ export default function Landing() {
             <a href="#benefits" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Benefits</a>
             <a href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a>
           </nav>
-          <Link to="/dashboard">
+          <Link to="/login">
             <Button className="bg-primary hover:bg-primary/90 text-white">
               Get Started
             </Button>
