@@ -48,7 +48,7 @@ export default function Landing() {
               Streamline your hospital operations with our comprehensive management system. From patient records to pharmacy inventory, manage everything efficiently in one place.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link to="/dashboard">
+              <Link to="/login">
                 <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg gap-2 w-full sm:w-auto">
                   Access Dashboard
                   <ArrowRight className="w-5 h-5" />
